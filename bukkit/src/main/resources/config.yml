@@ -1,49 +1,49 @@
 tps-performance-observation-value: -1
 
 fake-players:
-  enabled: false
+  enabled: true
 
   count-fake-players-to-online-players: false
 
 remove-gray-color-from-tab-in-spectator: false
 
-ignore-vanished-players-in-online-players: false
+ignore-vanished-players-in-online-players: true
 
 count-vanished-staffs: true
 
-hide-player-from-tab-when-afk: false
+hide-player-from-tab-when-afk: true
 
 per-world-player-list:
-  enabled: false
+  enabled: true
 
   world-groups:
-    example1:
-    - exampleWorld
-    - exampleAnotherWorld
+    : World
+    - world
+    - netherworld
 
     exampleGroup2:
     - exampleWorld2
     - exampleAnotherWorld2
 
 placeholder-format:
-  afk-status:
-    enable: false
+  afk-status: true
+    enable: true
 
     show-in-right-or-left-side: true
 
     show-player-group: true
 
-    format-yes: "&7 [AFK]&r "
-    format-no: ""
+    format-yes: "&7 AFK&r "
+    format-no: "lol"
 
     sort-last: false
 
   time:
-    time-zone: "GMT0"
+    time-zone: "BST"
 
-    use-system-zone: false
+    use-system-zone: true
 
-    time-format: "mm:HH"
+    time-format: "HH:mm"
 
     date-format: "dd/MM/yyyy"
 
@@ -62,7 +62,7 @@ placeholder-format:
     - '&6%tps% == 16.0'
     - '&c%tps% < 16.0'
 
-    size: 2
+    size: 3
 
 change-prefix-suffix-in-tablist:
   enable: true
@@ -72,7 +72,7 @@ change-prefix-suffix-in-tablist:
   disabled-worlds:
     use-as-whitelist: false
     list:
-    - myWorldWithUpper
+    - WORLDO
 
   sync-plugins-groups-with-tablist: true
 
